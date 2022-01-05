@@ -1,0 +1,41 @@
+html{
+    font-size: 62.5%; /*wymagane do remow*/
+}
+
+
+.logo{
+    width: 40rem; /*remy - jednostka ktora bedzie sie skalowala na telefonach*/
+    margin-left: 4%; /* margines od lewej */
+}
+
+.menu{
+float: center; /* centrowanie w css */
+}
+
+
+.menu a /* klasa menu, ale zwracamy sie do odnosnikow */
+{
+    color: black; /* kolor tekstu */
+    font-size: 16px; /* rozmiar czcionki */
+    font-family: 'Shizuru', cursive; /*czcionka z fonts.google.com */
+    text-decoration: none; /*nie rozkminiaj po co to jest*/
+    padding: 10px;
+}
+
+.menu a:hover /* kiedy uzytkownik najedzie na dany element menu */
+{
+color: red;
+}
+
+.slides{
+    margin-top: 3%;
+    margin-left: 7%;
+}
+
+.footer{
+    position:absolute; 
+    bottom:0; 
+    color: black;
+    margin-left: 43%;
+    font-size:14px;
+  }

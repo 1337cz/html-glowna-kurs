@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>kurs html</title> <!-- nazwa karty w przegladarce -->
+    <meta charset="utf-8"> <!-- typ znakow-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!-- tego i tak nie zrozumiesz mordeczko wiec nie wazne xd -->
+    <meta name="keywords" content="it, programming, html, css, js, cpp, c++, c#, C languages, code engineer, engieneer, code, src cd, src, source code, cd"> 
+    <link rel="stylesheet" href="style.css" type="text/css"> <!-- zalaczamy plik ze stylami lub mozna tez skrypt ;) -->
+    <link rel="shortcut icon" href="example"> <!--ikonka karty, zamiast example dajemy sciezke do naszej ikony w formacie .ico!!!-->
+</head>
+<body>
+    <center> <!--centrujemy zawartosc-->
+        <a href="index.html"><img class="logo" src="logo321.svg"/></a> <!--a href czyli odnosnik, img to zdjecie, src to sciezka, class to klasa w pliku style.css-->
+        <div class="menu"> <!--pojemnik o klasie menu-->
+        <a href="index.html">Glowna</a>
+        <a href="#kontakt">kontakt</a>
+        <a href="#uslugi">uslugi</a>
+        <a href="#omnie">o mnie</a>
+        </div>
+
+        <div class="slides">
+
+            <img class="mySlides" src="graf/logo321.svg" style="width:60%">
+            <img class="mySlides" src="graf/kod1.png" style="width:60%">
+            <img class="mySlides" src="graf/pins.png" style="width:60%">
+            <img class="mySlides" src="graf/plytka.png" style="width:60%">
+            <img class="mySlides" src="graf/supra.png" style="width:60%">
+            <img class="mySlides" src="graf/impreza.png" style="width:60%">
+            <img class="mySlides" src="graf/bmw.png" style="width:60%">
+            
+            </div>
+            
+            <script type="text/javascript">
+            var slideIndex = 0;
+            carousel();
+            
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 3700); 
+            }
+            </script>
+    </center>
+    <footer>
+        <div class="footer">2022 © Borys Jagoda</a></p></div>
+        </footer>
+</body>
